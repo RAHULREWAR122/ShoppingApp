@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 2000px;
+}
+
+.left {
+  width: 150px;
+  background: #e2e8e2;
+  margin-left: 8px;
+  padding: 15px;
+  height: 400px;
+  margin-top: 40px;
+  
+  border-radius: 10px;
+}
+
+.quality {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+.price > h2 {
+  margin-bottom: 5px;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.category > label {
+  cursor: pointer;
+  color: #0f4547;
+  font-size: 1rem;
+}
+label > input {
+  margin-right: 20px;
+  height: 25px;
+  width: 25px;
+}
+
+/* Right part */
+.right {
+  width: 84%;
+  background: #e2e8e2;
+  max-height: auto;
+  margin-right: 0.1%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 15px;
+  height: 75vh;
+  overflow: scroll;
+  border-radius: 10px;  
+}
+.right::-webkit-scrollbar {
+  display: none;
+}
+
+.cards {
+  border-radius: 10px;
+  box-shadow: 0 2px 8px 0 rgba(64, 77, 148, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.25s ease-in-out;
+  height: 350px;
+  width: 300px;
+  margin: 10px 5px 10px 5px;
+}
+.cards > img {
+  align-self: center;
+  border-radius: 10px;
+  height: 50%;
+  width: 90%;
+}
+.cards > h2 {
+  color: #484850;
+  font-size: 1.9rem;
+  margin-left: 20px;
+}
+.cards > h3 {
+  color: black;
+  font-size: 2rem;
+  margin-left: 20px;
+}
+
+.ca {
+  padding: 10px;
+  background: #1f9e2d;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.4rem;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.ca:hover {
+  background: #156d20;
+  color: #9f8a8a;
+}
+
+.noCa {
+  padding: 10px;
+  background: #d12020;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.4rem;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.noCa:hover {
+  background: #a51818;
+  color: #c0aeae;
+}
+
+.noData {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.searchBar {
+  height: 50px;
+  text-align: center;
+  width: 40%;
+  max-width: 700px;
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+  box-shadow: 0 0 8px 0 #858282;
+  transition: all 0.2s;
+}
+.searchBar:hover {
+  box-shadow: 0 0 20px 1px #858282;
+}

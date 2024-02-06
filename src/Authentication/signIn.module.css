@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.signInPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 88vh;
+}
+.signInForm {
+  height: 500px;
+  width: 400px;
+  border: 1px solid green;
+  background: #3a8850;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.form > input {
+  margin: 10px 0 20px 0;
+  height: 60px;
+  width: 90%;
+  border: none;
+  outline: none;
+}
+.signInForm button {
+  height: 60px;
+  width: 80%;
+  margin-top: -40px;
+  border: none;
+  outline: none;
+}
+.signInForm > button:disabled {
+  background: white;
+  color: red;
+}
+
+.signInForm>strong{
+  color: #efdede;
+}
+.signInForm>strong>a{
+  color: #d8de20;
+  font-size: 1.3rem;
+}
+
+.errMsg{
+  margin-bottom: 5px;
+  color: #a31a1a;
+  font-size: 1.3rem;
+}
